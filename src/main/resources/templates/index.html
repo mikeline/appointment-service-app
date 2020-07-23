@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to Meeting Service App</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container" style="text-align: center;">
+        <div class="content">
+            <h3>Choose the entity</h3>
+            <div class="dropdown entity">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Meeting
+                    <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="new-meeting">New</a></li>
+                    <li><a tabindex="-1" href="cancel-meeting">Cancel</a></li>
+                    <li><a tabindex="-1" href="add-participant">Add participant</a></li>
+                    <li><a tabindex="-1" href="delete-participant">Delete participant</a></li>
+                    <li><a tabindex="-1" href="show-all-meetings">Show all</a></li>
+                </ul>
+            </div>
+            <div class="dropdown entity">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Person
+                    <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="new-person">New</a></li>
+                    <li><a tabindex="-1" href="delete-person">Delete</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

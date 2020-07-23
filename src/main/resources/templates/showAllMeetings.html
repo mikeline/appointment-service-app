@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All meetings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="content" style="width: 40%; margin: 5vw auto;">
+            <div style="margin-left: 5vw;">
+                <h3>Meetings <a href="../app" class="btn btn-default" type="button">To home page</a></h3>
+            </div>
+            {{#meetings}}
+                <div class="card" style="margin-left: 5vw; width: 18rem; padding: 10px;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{title}}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">{{topic}}</h6>
+                        <p class="card-text">{{description}}</p>
+                        <p class="card-text">Place: {{place}}</p>
+                        <h6 class="card-subtitle">Participants:</h6>
+                        <ul class="list-group">
+                            {{#participants}}
+                            <li class="list-group-item">
+                                <div style="color: gray">
+                                    {{firstName}}
+                                    {{lastName}}
+                                    {{middleName}}
+                                </div>
+                                <div style="color: lightgray">
+                                    {{email}}
+                                </div>
+                            </li>
+                            {{/participants}}
+                        </ul>
+                    </div>
+                </div>
+            {{/meetings}}
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New person</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="content" style="width: 40%; margin: 5vw auto;">
+            <h3>New person</h3>
+            <form class="form">
+                <div class="form-group">
+                    <label for="inputFirstName">First name</label>
+                    <input id="inputFirstName" class="form-control" type="text" name="firstName" placeholder="First name" required>
+                </div>
+                <div class="form-group">
+                    <label for="inputLastName">Last name</label>
+                    <input id="inputLastName" class="form-control" type="text" name="lastName" placeholder="Last name" required>
+                </div>
+                <div class="form-group">
+                    <label for="inputMiddleName">Middle name</label>
+                    <input id="inputMiddleName" class="form-control" type="text" name="middleName" placeholder="Middle name">
+                </div>
+                <div class="form-group">
+                    <label for="inputPhone">Phone</label>
+                    <input id="inputPhone" class="form-control" type="text" name="phone" placeholder="Phone">
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail">Email</label>
+                    <input id="inputEmail" class="form-control" type="text" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="inputOccupation">Occupation</label>
+                    <input id="inputOccupation" class="form-control" type="text" name="occupation" placeholder="Occupation">
+                </div>
+                <button class="btn btn-default btn-manage-entity" type="button" url-attr="../app/person/create">Submit</button>
+                <a href="../app" class="btn btn-default" type="button">To home page</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

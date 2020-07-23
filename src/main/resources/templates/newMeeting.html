@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New meeting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="content" style="width: 40%; margin: 5vw auto;">
+            <h3>New meeting</h3>
+            <form class="form">
+                <div class="form-group">
+                    <label for="inputTitle">Title</label>
+                    <input id="inputTitle" class="form-control" type="text" name="title" placeholder="Title" required>
+                </div>
+                <div class="form-group">
+                    <label for="inputTopic">Topic</label>
+                    <input id="inputTopic" class="form-control" type="text" name="topic" placeholder="Topic" required>
+                </div>
+                <div class="form-group">
+                    <label for="txtDesc">Description</label>
+                    <textarea name="description" class="form-control" id="txtDesc" rows="3" placeholder="Description"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="inputPlace">Place</label>
+                    <input id="inputPlace" class="form-control" type="text" name="place" placeholder="Place" required>
+                </div>
+                <div class="form-group">
+                    <label for="startTime">Start time</label>
+                    <input id="startTime" class="form-control" type="datetime-local" name="startTime" required>
+                </div>
+                <div class="form-group">
+                    <label for="endTime">End time</label>
+                    <input id="endTime" class="form-control" type="datetime-local" name="endTime" placeholder="Place" required>
+                </div>
+                <button class="btn btn-default btn-manage-entity" type="button" url-attr="../app/meeting/create">Submit</button>
+                <a href="../app" class="btn btn-default" type="button">To home page</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

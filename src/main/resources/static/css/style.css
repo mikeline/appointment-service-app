@@ -1,0 +1,29 @@
+.entity {
+    margin-bottom: .6vw;
+    display: inline-block;
+}
+
+.content {
+    margin-top: 10vw;
+}
+
+.dropdown-menu {
+    top: 100%;
+    left: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+.hide {
+    display: none !important;
+}
+
+.show-block {
+    display: block !important;
+}
+
+.show-inline {
+    display: inline !important;
+}
